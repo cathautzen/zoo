@@ -9,11 +9,60 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"farve": $cyan-400,
+	"primary":    $green-500,
+	"secondary":  $orange-600,
+	"success":    $success,
+	"info":       $white,
+	"warning":    $warning,
+	"danger":     $danger,
+	"light":      $light,
+	"dark":       $dark,
+	"cardbg": 	#dcbfa6
 );
+
+
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.bg-dyr1 {
+	background-image: url("../images/dyr1.jpg");
+	min-height: 65vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-dyr2 {
+	background-image: url("../images/dyr2.jpg");
+	min-height: 65vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-dyr3 {
+	background-image: url("../images/dyr3.jpg");
+	min-height: 65vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.infotekst {
+	font-size: 13px;
+	font-family: "Baskerville Old Face";
+}
+
+.ticketknap {
+	font-size: 15px;
+	font-family: "Baskerville Old Face";
+}
+
+.cardbg {
+	background-color: theme-color("cardbg");
+}

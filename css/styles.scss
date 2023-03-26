@@ -17,7 +17,8 @@ $custom-colors: (
 	"danger":     $danger,
 	"light":      $light,
 	"dark":       $dark,
-	"cardbg": 	#dcbfa6
+	"cardbg": 	#dcbfa6,
+	"programbg": #e9f4ef
 );
 
 
@@ -53,16 +54,31 @@ body {
 	background-position: center;
 }
 
+.bg-dyr4 {
+	background-image: url("../images/dyr4.jpg");
+	min-height: 65vh;
+	background-size: cover;
+	background-position: center;
+}
+
 .infotekst {
 	font-size: 13px;
-	font-family: "Baskerville Old Face";
+	font-family: Bahnschrift, Arial;
 }
 
 .ticketknap {
 	font-size: 15px;
-	font-family: "Baskerville Old Face";
+	font-family: Bahnschrift, Arial;
 }
 
 .cardbg {
 	background-color: theme-color("cardbg");
+}
+
+.programbg {
+	background-color: theme-color("programbg");
+}
+
+h1 {
+	font-family: Bahnschrift, Arial;
 }

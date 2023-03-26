@@ -18,7 +18,8 @@ $custom-colors: (
 	"light":      $light,
 	"dark":       $dark,
 	"cardbg": 	#dcbfa6,
-	"programbg": #e9f4ef
+	"programbg": #e9f4ef,
+	"foodbg":	#74acdd
 );
 
 
@@ -61,6 +62,13 @@ body {
 	background-position: center;
 }
 
+.bg-dyr5 {
+	background-image: url("../images/dyr5.jpg");
+	min-height: 65vh;
+	background-size: cover;
+	background-position: center;
+}
+
 .infotekst {
 	font-size: 13px;
 	font-family: Bahnschrift, Arial;
@@ -71,14 +79,10 @@ body {
 	font-family: Bahnschrift, Arial;
 }
 
-.cardbg {
-	background-color: theme-color("cardbg");
-}
-
-.programbg {
-	background-color: theme-color("programbg");
-}
-
 h1 {
 	font-family: Bahnschrift, Arial;
+}
+
+.form-control {
+	border-radius: 0;
 }
